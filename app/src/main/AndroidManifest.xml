@@ -24,7 +24,8 @@
                 android:name=".LogInActivity"
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".ForgotPasswordActivity">
+        <activity android:name=".ForgotPasswordActivity"
+                  android:theme="@style/AppTheme.NoActionBar">
         </activity>
     </application>
 

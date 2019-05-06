@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">MJR Languages</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="log_in">LOG IN</string>
+    <string name="forgot_password">FORGOT PASSWORD?</string>
+    <string name="recover_password_message">Please enter your username.\n
+        Well\'s send an email to the account registered with your password.</string>
+    <string name="recover_password_title">Recover Password</string>
+    <string name="recover_send">SEND</string>
+    <string name="dialog_recover_title">Recover Password</string>
+    <string name="dialog_recover_message">We just sent your password to registered mail, please check your mailbox.</string>
+    <string name="dialog_recover_exit">DONE</string>
 </resources>
