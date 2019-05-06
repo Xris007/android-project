@@ -11,7 +11,7 @@
             style="?android:progressBarStyleHorizontal"
             android:layout_width="300dp"
             android:layout_height="300dp"
-            android:progressDrawable="@drawable/circle"
+            android:progressDrawable="@drawable/ic_circle"
             android:id="@+id/progressBar"
             android:layout_marginTop="8dp"
             app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"

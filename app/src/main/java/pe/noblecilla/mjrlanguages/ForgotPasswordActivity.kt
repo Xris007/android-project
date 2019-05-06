@@ -19,14 +19,12 @@ class ForgotPasswordActivity : AppCompatActivity() {
 
         btnSend.setOnClickListener {
             val alert = AlertDialog.Builder(this@ForgotPasswordActivity)
-            alert.setTitle(R.string.dialog_recover_title)
-            alert.setMessage(R.string.dialog_recover_message)
+            alert.setView(R.layout.dialog_password)
             alert.setPositiveButton(R.string.dialog_recover_exit){
                 dialog, which ->
                 startActivity(Intent(this, LogInActivity::class.java))
                 finish()
             }
-
             val dialog: AlertDialog = alert.create()
             dialog.show()
         }
