@@ -7,5 +7,5 @@
     <color name="colorTextTitle">#FFFFFF</color>
     <color name="colorTextPrimary">#1D1D26</color>
     <color name="colorTextHint">#B0B0B0</color>
-    <color name="colorbtncancel">#B40404</color>
+    <color name="colorBtnCancel">#B40404</color>
 </resources>

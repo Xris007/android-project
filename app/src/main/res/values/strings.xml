@@ -1,9 +1,11 @@
 <resources>
     <string name="app_name">MJR Languages</string>
+
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="log_in">LOG IN</string>
     <string name="forgot_password">FORGOT PASSWORD?</string>
+
     <string name="recover_password_message">Please enter your username.\n
         Well\'s send an email to the account registered with your password.
     </string>
@@ -14,32 +16,31 @@
     </string>
     <string name="dialog_recover_exit">DONE</string>
 
-    <string name="text_add_title">Add Class</string>
-    <string name="name_student">Name</string>
+    <string name="title_add_class">Add Class</string>
+    <string name="name">Name</string>
     <string name="teacher">Teacher</string>
     <string name="lesson">Lesson</string>
     <string name="schedule">Schedule</string>
     <string name="comment">Comment</string>
-    <string name="text_add">ADD</string>
-    <string name="text_cancel">CANCEL</string>
-
-    <string name="dialog_confirm_class">Confirm Class</string>
-    <string name="dialog_confirm_message">Are you sure to add this class?</string>
-
-    <string name="dialog_confirm_exit">ACCEPT</string>
+    <string name="add">ADD</string>
+    <string name="cancel">CANCEL</string>
+    <string name="dialog_class_title">Confirm Class</string>
+    <string name="dialog_class_message">Are you sure to add this class?</string>
+    <string name="dialog_class_confirm">ACCEPT</string>
+    <string name="dialog_class_cancel">CANCEL</string>
 
 
     <string name="title_class">Class</string>
+    <string name="class_number">Your Class</string>
+    <string name="edit">EDIT</string>
+    <string name="exit">EXIT</string>
 
-    <string name="your_class">Your Class</string>
-    <string name="edit_btn">EDIT</string>
-    <string name="exti_btn">EXit</string>
+    <string name="save">SAVE</string>
 
-    <string name="save_btn">SAVE</string>
-
-    <string name="dialog_save">Save Changes</string>
-    <string name="dialog_save_message">You just made changes to the class.\nAre you sure you want to save the changes?
+    <string name="dialog_save_title">Save Changes</string>
+    <string name="dialog_save_message">You just made changes to the class.\n
+        Are you sure you want to save the changes?
     </string>
 
-    <string name="feed_back">FEED BACK</string>
+    <string name="feedback">FEED BACK</string>
 </resources>
