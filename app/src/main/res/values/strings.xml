@@ -5,10 +5,41 @@
     <string name="log_in">LOG IN</string>
     <string name="forgot_password">FORGOT PASSWORD?</string>
     <string name="recover_password_message">Please enter your username.\n
-        Well\'s send an email to the account registered with your password.</string>
+        Well\'s send an email to the account registered with your password.
+    </string>
     <string name="recover_password_title">Recover Password</string>
     <string name="recover_send">SEND</string>
     <string name="dialog_recover_title">Recover Password</string>
-    <string name="dialog_recover_message">We just sent your password to registered mail, please check your mailbox.</string>
+    <string name="dialog_recover_message">We just sent your password to registered mail, please check your mailbox.
+    </string>
     <string name="dialog_recover_exit">DONE</string>
+
+    <string name="text_add_title">Add Class</string>
+    <string name="name_student">Name</string>
+    <string name="teacher">Teacher</string>
+    <string name="lesson">Lesson</string>
+    <string name="schedule">Schedule</string>
+    <string name="comment">Comment</string>
+    <string name="text_add">ADD</string>
+    <string name="text_cancel">CANCEL</string>
+
+    <string name="dialog_confirm_class">Confirm Class</string>
+    <string name="dialog_confirm_message">Are you sure to add this class?</string>
+
+    <string name="dialog_confirm_exit">ACCEPT</string>
+
+
+    <string name="title_class">Class</string>
+
+    <string name="your_class">Your Class</string>
+    <string name="edit_btn">EDIT</string>
+    <string name="exti_btn">EXit</string>
+
+    <string name="save_btn">SAVE</string>
+
+    <string name="dialog_save">Save Changes</string>
+    <string name="dialog_save_message">You just made changes to the class.\nAre you sure you want to save the changes?
+    </string>
+
+    <string name="feed_back">FEED BACK</string>
 </resources>
