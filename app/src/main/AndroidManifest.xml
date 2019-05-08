@@ -9,12 +9,31 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".ContactUs">
+        </activity>
+        <activity
+                android:name=".EditClass"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".ClassInfo"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".AllClasses"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".AddClass"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
         <activity
                 android:name=".SplashActivity"
                 android:screenOrientation="portrait"
                 android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
+
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
@@ -23,9 +42,10 @@
                 android:screenOrientation="portrait"
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".ForgotPasswordActivity"
-                  android:screenOrientation="portrait"
-                  android:theme="@style/AppTheme.NoActionBar">
+        <activity
+                android:name=".ForgotPasswordActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
                 android:name=".HomeActivity"
