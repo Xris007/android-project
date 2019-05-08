@@ -5,7 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".EditClass"
+        tools:context=".EditClassActivity"
         android:orientation="vertical">
 
     <ScrollView
@@ -15,48 +15,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-            <android.support.v7.widget.Toolbar
-                    android:id="@+id/toolBar"
-                    android:layout_width="match_parent"
-                    android:layout_height="?attr/actionBarSize"
-                    android:background="@null"
-                    android:elevation="4dp"
-                    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-                    app:layout_constraintTop_toTopOf="@+id/imageView" app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent">
-                <ImageView
-                        android:id="@+id/ivBack"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/ic_back"/>
-                <TextView
-                        android:id="@+id/toolBar_title"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:textColor="@color/colorTextTitle"
-                        android:letterSpacing="0.02"
-                        android:lineSpacingExtra="0sp"
-                        android:gravity="center_horizontal"
-                        android:text="Edit Class"
-                        android:fontFamily="@font/avenir_light"
-
-                        app:layout_constraintTop_toTopOf="@+id/toolBar" android:layout_marginStart="25dp"
-                        app:layout_constraintStart_toStartOf="@id/ivBack" android:layout_marginEnd="8dp"
-                        app:layout_constraintEnd_toEndOf="parent"/>
-
-            </android.support.v7.widget.Toolbar>
             <ImageView
-                    android:id="@+id/imageView1"
+                    android:id="@+id/imageView"
                     android:layout_width="wrap_content"
                     android:layout_height="250dp"
                     android:background="@drawable/ic_header_image"
-                    android:layout_marginTop="-56dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
+                    android:layout_marginTop="-56dp"/>
             <TextView
-                    android:id="@+id/textTitleClass"
+                    android:id="@+id/textClassNumber"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="24sp"
@@ -66,14 +32,11 @@
                     android:gravity="center_horizontal"
                     android:text="Name of the Class"
                     android:fontFamily="@font/avenir_light"
-                    android:layout_marginTop="-120dp"
-                    app:layout_constraintTop_toTopOf="@+id/imageView1" android:layout_marginStart="8dp"
-                    app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
-                    app:layout_constraintEnd_toEndOf="parent"/>
+                    android:layout_marginTop="-120dp"/>
 
 
             <TextView
-                    android:id="@+id/textView1"
+                    android:id="@+id/textView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="16sp"
@@ -81,21 +44,10 @@
                     android:letterSpacing="0.02"
                     android:lineSpacingExtra="0sp"
                     android:gravity="center_horizontal"
-                    android:text="@string/name_student"
+                    android:text="@string/name"
                     android:fontFamily="@font/avenir_book"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView1"
                     android:layout_marginTop="90dp"
-                    android:layout_marginStart="8dp"
-                    app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
-                    app:layout_constraintEnd_toEndOf="parent"/>
-            <ImageView
-                    android:id="@+id/imageView2"
-                    android:layout_width="380dp"
-                    android:layout_height="1dp"
-                    android:background="@drawable/ic_underline"
-                    app:layout_constraintTop_toBottomOf="@+id/etNameStudent" app:layout_constraintStart_toStartOf="parent"
-                    android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-                    android:layout_marginTop="10dp"/>
+                    android:layout_marginStart="8dp"/>
             <EditText
                     android:id="@+id/etNameStudent"
                     android:layout_width="match_parent"
@@ -110,11 +62,17 @@
                     android:fontFamily="@font/avenir_book"
                     android:gravity="center_horizontal"
                     android:layout_marginTop="15dp"
-                    app:layout_constraintTop_toBottomOf="@+id/textView1" android:layout_marginStart="8dp"
-                    app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
-                    app:layout_constraintEnd_toEndOf="parent"/>
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"/>
+            <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="380dp"
+                    android:layout_height="1dp"
+                    android:background="@drawable/ic_underline"
+                    android:layout_marginStart="8dp" android:layout_marginEnd="8dp"
+                    android:layout_marginTop="10dp"/>
             <TextView
-                    android:id="@+id/textView2"
+                    android:id="@+id/tvEnter"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="16sp"
@@ -125,9 +83,8 @@
                     android:text="@string/teacher"
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/avenir_book"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView2" android:layout_marginStart="8dp"
-                    app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
-                    app:layout_constraintEnd_toEndOf="parent"/>
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"/>
             <EditText
                     android:id="@+id/etTeacher"
                     android:layout_width="match_parent"
@@ -142,19 +99,17 @@
                     android:fontFamily="@font/avenir_book"
                     android:gravity="center_horizontal"
                     android:layout_marginTop="15dp"
-                    app:layout_constraintTop_toBottomOf="@+id/textView2" android:layout_marginStart="8dp"
-                    app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
-                    app:layout_constraintEnd_toEndOf="parent"/>
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"/>
             <ImageView
-                    android:id="@+id/imageView3"
+                    android:id="@+id/imageView2"
                     android:layout_width="380dp"
                     android:layout_height="1dp"
                     android:background="@drawable/ic_underline"
-                    app:layout_constraintTop_toBottomOf="@+id/etTeacher" app:layout_constraintStart_toStartOf="parent"
-                    android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-                    android:layout_marginTop="10dp"/>
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"/>
             <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="16sp"
@@ -165,9 +120,8 @@
                     android:text="@string/lesson"
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/avenir_book"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView3" android:layout_marginStart="8dp"
-                    app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
-                    app:layout_constraintEnd_toEndOf="parent"/>
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"/>
             <EditText
                     android:id="@+id/etLesson"
                     android:layout_width="match_parent"
@@ -182,22 +136,20 @@
                     android:fontFamily="@font/avenir_book"
                     android:gravity="center_horizontal"
                     android:layout_marginTop="15dp"
-                    app:layout_constraintTop_toBottomOf="@+id/textView3" android:layout_marginStart="8dp"
-                    app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
-                    app:layout_constraintEnd_toEndOf="parent"/>
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"/>
             <ImageView
-                    android:id="@+id/imageView4"
+                    android:id="@+id/imageView3"
                     android:layout_width="380dp"
                     android:layout_height="1dp"
                     android:background="@drawable/ic_underline"
-                    app:layout_constraintTop_toBottomOf="@+id/etLesson" app:layout_constraintStart_toStartOf="parent"
-                    android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-                    android:layout_marginTop="10dp"/>
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"/>
 
             <TextView
                     android:id="@+id/textView3"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="16dp"
                     android:textSize="16sp"
                     android:textColor="@color/colorTextHint"
                     android:letterSpacing="0.02"
@@ -206,9 +158,8 @@
                     android:text="@string/schedule"
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/avenir_book"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView4" android:layout_marginStart="8dp"
-                    app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
-                    app:layout_constraintEnd_toEndOf="parent"/>
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"/>
             <EditText
                     android:id="@+id/etSchedule"
                     android:layout_width="match_parent"
@@ -223,19 +174,17 @@
                     android:fontFamily="@font/avenir_book"
                     android:gravity="center_horizontal"
                     android:layout_marginTop="15dp"
-                    app:layout_constraintTop_toBottomOf="@+id/textView3" android:layout_marginStart="8dp"
-                    app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
-                    app:layout_constraintEnd_toEndOf="parent"/>
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"/>
             <ImageView
-                    android:id="@+id/imageView5"
+                    android:id="@+id/imageView4"
                     android:layout_width="380dp"
                     android:layout_height="1dp"
                     android:background="@drawable/ic_underline"
-                    app:layout_constraintTop_toBottomOf="@+id/etSchedule" app:layout_constraintStart_toStartOf="parent"
-                    android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-                    android:layout_marginTop="10dp"/>
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"/>
             <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/textView4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="16sp"
@@ -246,14 +195,13 @@
                     android:text="@string/comment"
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/avenir_book"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView5" android:layout_marginStart="8dp"
-                    app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
-                    app:layout_constraintEnd_toEndOf="parent"/>
-            <EditText
-                    android:id="@+id/etComment"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"/>
+            <MultiAutoCompleteTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textPersonName"
+                    android:maxLines="3"
+                    android:id="@+id/mltTextComent"
                     android:ems="10"
                     android:textSize="24sp"
                     android:textColor="@color/colorTextPrimary"
@@ -263,30 +211,27 @@
                     android:fontFamily="@font/avenir_book"
                     android:gravity="center_horizontal"
                     android:layout_marginTop="15dp"
-                    app:layout_constraintTop_toBottomOf="@+id/textView5" android:layout_marginStart="8dp"
-                    app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
-                    app:layout_constraintEnd_toEndOf="parent"/>
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"/>
             <ImageView
-                    android:id="@+id/imageView6"
+                    android:id="@+id/imageView5"
                     android:layout_width="380dp"
                     android:layout_height="1dp"
                     android:background="@drawable/ic_underline"
-                    app:layout_constraintTop_toBottomOf="@+id/etComment" app:layout_constraintStart_toStartOf="parent"
-                    android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-                    android:layout_marginTop="10dp"/>
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"/>
             <Button
-                    android:id="@+id/btnAdding"
+                    android:id="@+id/btnSave"
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
                     android:textSize="12sp"
                     android:textColor="@color/colorTextTitle"
                     android:letterSpacing="0.09"
                     android:lineSpacingExtra="0sp"
-                    android:text="@string/edit_btn"
+                    android:text="@string/save"
                     android:background="#4AAB35"
                     android:fontFamily="@font/avenir_book"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView6" android:layout_marginStart="75dp"
-                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="75dp"
                     android:layout_marginTop="20dp"/>
             <Button
                     android:id="@+id/btnCancel"
@@ -296,19 +241,11 @@
                     android:textColor="@color/colorTextTitle"
                     android:letterSpacing="0.09"
                     android:lineSpacingExtra="0sp"
-                    android:text="@string/exti_btn"
-                    android:background="#B40404"
+                    android:text="@string/cancel"
+                    android:background="@color/colorBtnCancel"
                     android:fontFamily="@font/avenir_book"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView6"
                     android:layout_marginTop="-48.5dp"
-                    android:layout_marginLeft="220dp"
-                    app:layout_constraintStart_toEndOf="@+id/btnAdding"/>
-
+                    android:layout_marginLeft="220dp"/>
         </LinearLayout>
-
     </ScrollView>
-
-
-
-
 </LinearLayout>

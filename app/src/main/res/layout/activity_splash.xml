@@ -22,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/ic_logo"
-            android:id="@+id/imageView1"
+            android:id="@+id/imageView"
             app:layout_constraintTop_toTopOf="@+id/progressBar" app:layout_constraintStart_toStartOf="@+id/progressBar"
             app:layout_constraintEnd_toEndOf="@+id/progressBar"
             app:layout_constraintBottom_toBottomOf="@+id/progressBar"/>

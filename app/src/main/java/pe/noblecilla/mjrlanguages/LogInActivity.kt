@@ -12,7 +12,7 @@ class LogInActivity : AppCompatActivity() {
         setContentView(R.layout.activity_log_in)
 
         btnLogIn.setOnClickListener {
-            startActivity(Intent(this, EditClass::class.java))
+            startActivity(Intent(this, HomeActivity::class.java))
         }
 
         tvForgotPassword.setOnClickListener {

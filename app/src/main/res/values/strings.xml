@@ -10,12 +10,13 @@
         Well\'s send an email to the account registered with your password.
     </string>
     <string name="recover_password_title">Recover Password</string>
-    <string name="recover_send">SEND</string>
+    <string name="send">SEND</string>
     <string name="dialog_recover_title">Recover Password</string>
     <string name="dialog_recover_message">We just sent your password to registered mail, please check your mailbox.
     </string>
-    <string name="dialog_recover_exit">DONE</string>
+    <string name="done">DONE</string>
 
+    <string name="title_edit_class">Edit Class</string>
     <string name="title_add_class">Add Class</string>
     <string name="name">Name</string>
     <string name="teacher">Teacher</string>
@@ -27,10 +28,9 @@
     <string name="dialog_class_title">Confirm Class</string>
     <string name="dialog_class_message">Are you sure to add this class?</string>
     <string name="dialog_class_confirm">ACCEPT</string>
-    <string name="dialog_class_cancel">CANCEL</string>
 
 
-    <string name="title_class">Class</string>
+    <string name="class_title">Class</string>
     <string name="class_number">Your Class</string>
     <string name="edit">EDIT</string>
     <string name="exit">EXIT</string>
@@ -42,5 +42,21 @@
         Are you sure you want to save the changes?
     </string>
 
-    <string name="feedback">FEED BACK</string>
+    <string name="contant_us_title">Contant Us</string>
+    <string name="phone_string">Phone Number</string>
+    <string name="phone_number">987-654-321</string>
+    <string name="email_string">Email</string>
+    <string name="email">mrj.languages@languaes.com</string>
+    <string name="address_string">Address</string>
+    <string name="address">Miraflores</string>
+    <string name="feedback">FEEDBACK</string>
+
+    <string name="title_class_info">Class Info</string>
+
+    <string name="package_title">Package</string>
+    <string name="notification_title">Notification</string>
+
+    <string name="dialog_exit_title"></string>
+    <string name="dialog_exit_message"></string>
+
 </resources>
