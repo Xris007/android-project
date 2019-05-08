@@ -15,12 +15,15 @@ class ClassActivity : AppCompatActivity() {
             startActivity(Intent(this, HomeActivity::class.java))
         }
 
-        tvEnter.setOnClickListener {
+        tvInfo.setOnClickListener {
             startActivity(Intent(this, ClassInfoActivity::class.java))
         }
 
-        btnAdd.setOnClickListener {
+        fabAdd.setOnClickListener {
             startActivity(Intent(this, AddClassActivity::class.java))
         }
+
+
+
     }
 }

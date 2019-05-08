@@ -51,6 +51,7 @@
     <string name="address">Miraflores</string>
     <string name="feedback">FEEDBACK</string>
 
+    <string name="detail">DETAIL</string>
     <string name="title_class_info">Class Info</string>
 
     <string name="package_title">Package</string>

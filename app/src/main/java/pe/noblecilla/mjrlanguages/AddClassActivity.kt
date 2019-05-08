@@ -13,8 +13,7 @@ class AddClassActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_class)
 
-
-        btnSend.setOnClickListener {
+        btnAdd.setOnClickListener {
             val alert = AlertDialog.Builder(this@AddClassActivity)
             alert.setView(R.layout.dialog_add_class)
             alert.setPositiveButton(R.string.add){
@@ -32,5 +31,6 @@ class AddClassActivity : AppCompatActivity() {
         btnCancel.setOnClickListener {
             startActivity(Intent(this, ClassActivity::class.java))
         }
+
     }
 }

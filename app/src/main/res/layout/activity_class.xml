@@ -65,7 +65,7 @@
             app:layout_constraintEnd_toEndOf="@+id/toolBar" android:layout_marginStart="8dp"
             android:layout_marginTop="100dp"/>
     <TextView
-            android:id="@+id/tvEnter"
+            android:id="@+id/tvInfo"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:textSize="16sp"
@@ -73,7 +73,7 @@
             android:letterSpacing="0.02"
             android:lineSpacingExtra="0sp"
             android:gravity="center_horizontal"
-            android:text="ENTER"
+            android:text="@string/detail"
             android:fontFamily="@font/avenir_book"
             app:layout_constraintTop_toBottomOf="@+id/textClassNumber"
             app:layout_constraintStart_toStartOf="@+id/imageView" android:layout_marginEnd="8dp"
@@ -87,16 +87,14 @@
             app:layout_constraintTop_toBottomOf="@+id/tvEnter" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             android:layout_marginTop="75dp"/>
-    <Button
-            android:text="+"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:id="@+id/btnAdd"
-            android:background="@drawable/circle_button"
-            android:textColor="@color/colorTextTitle"
-            android:textSize="24sp"
-            android:layout_marginEnd="25dp"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginBottom="25dp"
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/ic_add"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="25dp" android:layout_marginBottom="25dp"
             app:layout_constraintBottom_toBottomOf="parent"/>
 
 </android.support.constraint.ConstraintLayout>
