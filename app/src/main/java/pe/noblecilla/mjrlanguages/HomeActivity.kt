@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AlertDialog
+import android.view.Menu
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.home_content.*
 
@@ -21,24 +22,63 @@ class HomeActivity : AppCompatActivity() {
             startActivity(Intent(this, ClassActivity::class.java))
         }
 
+        iBtnPackage.setOnClickListener {
+            startActivity(Intent(this, PackageActivity::class.java))
+        }
+
+        iBtnNotification.setOnClickListener {
+            startActivity(Intent(this, NotificationActivity::class.java))
+        }
+
+        iBtnTeacher.setOnClickListener {
+            startActivity(Intent(this, TeacherInfoActivity::class.java))
+        }
+
         iBtnContact.setOnClickListener {
             startActivity(Intent(this, ContactUsActivity::class.java))
         }
 
-        //setSupportActionBar(toolBar)
         toggle = ActionBarDrawerToggle(
             this, drawerLayout, toolBar, R.string.open, R.string.exit)
         drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
-        //toolBar.setNavigationIcon(R.drawable.ic_menu)
 
 
-
-
-
-
-
-
+        navView.setNavigationItemSelectedListener {
+            when(it.itemId) {
+                R.id.navUser -> {
+                    startActivity(Intent(this, StudentInfoActivity::class.java))
+                    true
+                } R.id.navClass -> {
+                    startActivity(Intent(this, ClassActivity::class.java))
+                    true
+                } R.id.navSchedule -> {
+                    true
+                } R.id.navPackage -> {
+                    startActivity(Intent(this, PackageActivity::class.java))
+                    true
+                } R.id.navNotification -> {
+                    startActivity(Intent(this, NotificationActivity::class.java))
+                    true
+                } R.id.navSetting -> {
+                    true
+                } R.id.navLogOut -> {
+                    val alert = AlertDialog.Builder(this@HomeActivity)
+                    alert.setView(R.layout.dialog_exit)
+                    alert.setPositiveButton(R.string.exit){
+                            dialog, which ->
+                        startActivity(Intent(this, LogInActivity::class.java))
+                        finish()
+                    }
+                    alert.setNegativeButton(R.string.cancel){
+                            dialog, which ->
+                    }
+                    val dialoga: AlertDialog = alert.create()
+                    dialoga.show()
+                    true
+                } else -> false
+            }
+        }
 
     }
 
@@ -48,12 +88,12 @@ class HomeActivity : AppCompatActivity() {
         } else {
             val alert = AlertDialog.Builder(this@HomeActivity)
             alert.setView(R.layout.dialog_exit)
-            alert.setNegativeButton(R.string.exit){
+            alert.setPositiveButton(R.string.exit){
                     dialog, which ->
                 startActivity(Intent(this, LogInActivity::class.java))
                 finish()
             }
-            alert.setPositiveButton(R.string.cancel){
+            alert.setNegativeButton(R.string.cancel){
                     dialog, which ->
             }
             val dialog: AlertDialog = alert.create()
@@ -61,4 +101,11 @@ class HomeActivity : AppCompatActivity() {
         }
 
     }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        val inflater = menuInflater
+        inflater.inflate(R.menu.menu_home, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
 }

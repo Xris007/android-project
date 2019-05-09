@@ -46,7 +46,7 @@
     <string name="phone_string">Phone Number</string>
     <string name="phone_number">987-654-321</string>
     <string name="email_string">Email</string>
-    <string name="email">mrj.languages@languaes.com</string>
+    <string name="email">email@languaes.com</string>
     <string name="address_string">Address</string>
     <string name="address">Miraflores</string>
     <string name="feedback">FEEDBACK</string>
@@ -57,13 +57,28 @@
     <string name="package_title">Package</string>
     <string name="notification_title">Notification</string>
 
-    <string name="dialog_exit_title"></string>
-    <string name="dialog_exit_message"></string>
+    <string name="dialog_exit_message">Are you sure?</string>
 
-    <string name="user">User</string>
+    <string name="account">Account</string>
     <string name="configuration">Configuration</string>
     <string name="settings">Settings</string>
     <string name="log_out">Log Out</string>
     <string name="open">OPEN</string>
+    <string name="all">All</string>
+    <string name="notification_info">Notification Info</string>
+    <string name="notification_messages">Notification Messages</string>
+
+    <string name="update">UPDATE</string>
+    <string name="package_info">Package Info</string>
+    <string name="package_level">Level</string>
+    <string name="package_program">Program</string>
+    <string name="package_hours">Hours</string>
+    <string name="package_materials">Materials</string>
+
+    <string name="woym">What\'s on your mind?</string>
+    <string name="toolbar_feedback">Feedback</string>
+
+    <string name="dialog_feedback_title">FeedBack</string>
+    <string name="dialog_feedback_message">You are about to send this message.\nAre you sure you want to continue?</string>
 
 </resources>

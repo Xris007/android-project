@@ -15,10 +15,15 @@ class ClassInfoActivity : AppCompatActivity() {
 
         ivBack.setOnClickListener {
             startActivity(Intent(this, ClassActivity::class.java))
+            finish()
         }
 
         btnEdit.setOnClickListener {
             startActivity(Intent(this, EditClassActivity::class.java))
         }
+    }
+
+    override fun onBackPressed() {
+
     }
 }

@@ -5,7 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".EditClassActivity"
+        tools:context=".AddClassActivity"
         android:orientation="vertical">
 
     <ScrollView
@@ -15,42 +15,35 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-
-
             <ImageView
                     android:id="@+id/imageView"
                     android:layout_width="wrap_content"
                     android:layout_height="250dp"
-                    android:background="@drawable/ic_header_image"
-                    android:layout_marginTop="-56dp"/>
+                    android:background="@drawable/ic_header_image"/>
             <TextView
                     android:id="@+id/textClassNumber"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:text="Name of the Class"
                     android:textSize="24sp"
                     android:textColor="@color/colorTextTitle"
                     android:letterSpacing="0.02"
                     android:lineSpacingExtra="0sp"
                     android:gravity="center_horizontal"
-                    android:text="Name of the Class"
                     android:fontFamily="@font/avenir_light"
                     android:layout_marginTop="-120dp"/>
-
-
             <TextView
                     android:id="@+id/textView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:text="@string/name"
                     android:textSize="16sp"
                     android:textColor="@color/colorTextHint"
                     android:letterSpacing="0.02"
                     android:lineSpacingExtra="0sp"
                     android:gravity="center_horizontal"
-                    android:text="@string/name"
                     android:fontFamily="@font/avenir_book"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView"
-                    android:layout_marginTop="90dp"
-                    android:layout_marginStart="8dp"/>
+                    android:layout_marginTop="90dp"/>
             <EditText
                     android:id="@+id/etNameStudent"
                     android:layout_width="match_parent"
@@ -64,16 +57,12 @@
                     android:background="@android:color/transparent"
                     android:fontFamily="@font/avenir_book"
                     android:gravity="center_horizontal"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"/>
+                    android:layout_marginTop="15dp"/>
             <ImageView
                     android:id="@+id/imageView1"
                     android:layout_width="380dp"
                     android:layout_height="1dp"
                     android:background="@drawable/ic_underline"
-                    app:layout_constraintTop_toBottomOf="@+id/etNameStudent"
-                    android:layout_marginStart="8dp" android:layout_marginEnd="8dp"
                     android:layout_marginTop="10dp"/>
             <TextView
                     android:id="@+id/tvEnter"
@@ -86,9 +75,7 @@
                     android:gravity="center_horizontal"
                     android:text="@string/teacher"
                     android:layout_marginTop="16dp"
-                    android:fontFamily="@font/avenir_book"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"/>
+                    android:fontFamily="@font/avenir_book"/>
             <EditText
                     android:id="@+id/etTeacher"
                     android:layout_width="match_parent"
@@ -102,16 +89,12 @@
                     android:background="@android:color/transparent"
                     android:fontFamily="@font/avenir_book"
                     android:gravity="center_horizontal"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"/>
+                    android:layout_marginTop="15dp"/>
             <ImageView
                     android:id="@+id/imageView2"
                     android:layout_width="380dp"
                     android:layout_height="1dp"
-                    android:background="@drawable/ic_underline"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"/>
+                    android:background="@drawable/ic_underline"/>
             <TextView
                     android:id="@+id/textView2"
                     android:layout_width="match_parent"
@@ -123,9 +106,7 @@
                     android:gravity="center_horizontal"
                     android:text="@string/lesson"
                     android:layout_marginTop="16dp"
-                    android:fontFamily="@font/avenir_book"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"/>
+                    android:fontFamily="@font/avenir_book"/>
             <EditText
                     android:id="@+id/etLesson"
                     android:layout_width="match_parent"
@@ -134,22 +115,17 @@
                     android:ems="10"
                     android:textSize="24sp"
                     android:textColor="@color/colorTextPrimary"
+                    android:background="@android:color/transparent"
                     android:letterSpacing="0.02"
                     android:lineSpacingExtra="0sp"
-                    android:background="@android:color/transparent"
                     android:fontFamily="@font/avenir_book"
                     android:gravity="center_horizontal"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"/>
+                    android:layout_marginTop="15dp"/>
             <ImageView
                     android:id="@+id/imageView3"
                     android:layout_width="380dp"
                     android:layout_height="1dp"
-                    android:background="@drawable/ic_underline"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"/>
-
+                    android:background="@drawable/ic_underline"/>
             <TextView
                     android:id="@+id/textView3"
                     android:layout_width="match_parent"
@@ -161,9 +137,7 @@
                     android:gravity="center_horizontal"
                     android:text="@string/schedule"
                     android:layout_marginTop="16dp"
-                    android:fontFamily="@font/avenir_book"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"/>
+                    android:fontFamily="@font/avenir_book"/>
             <EditText
                     android:id="@+id/etSchedule"
                     android:layout_width="match_parent"
@@ -171,22 +145,18 @@
                     android:inputType="textPersonName"
                     android:ems="10"
                     android:textSize="24sp"
+                    android:background="@android:color/transparent"
                     android:textColor="@color/colorTextPrimary"
                     android:letterSpacing="0.02"
                     android:lineSpacingExtra="0sp"
-                    android:background="@android:color/transparent"
                     android:fontFamily="@font/avenir_book"
                     android:gravity="center_horizontal"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"/>
+                    android:layout_marginTop="15dp"/>
             <ImageView
                     android:id="@+id/imageView4"
                     android:layout_width="380dp"
                     android:layout_height="1dp"
-                    android:background="@drawable/ic_underline"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"/>
+                    android:background="@drawable/ic_underline"/>
             <TextView
                     android:id="@+id/textView4"
                     android:layout_width="match_parent"
@@ -198,9 +168,7 @@
                     android:gravity="center_horizontal"
                     android:text="@string/comment"
                     android:layout_marginTop="16dp"
-                    android:fontFamily="@font/avenir_book"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"/>
+                    android:fontFamily="@font/avenir_book"/>
             <MultiAutoCompleteTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -214,16 +182,12 @@
                     android:background="@android:color/transparent"
                     android:fontFamily="@font/avenir_book"
                     android:gravity="center_horizontal"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"/>
+                    android:layout_marginTop="15dp"/>
             <ImageView
                     android:id="@+id/imageView5"
                     android:layout_width="380dp"
                     android:layout_height="1dp"
-                    android:background="@drawable/ic_underline"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"/>
+                    android:background="@drawable/ic_underline"/>
             <Button
                     android:id="@+id/btnAdd"
                     android:layout_width="120dp"
@@ -250,7 +214,6 @@
                     android:fontFamily="@font/avenir_book"
                     android:layout_marginTop="-48.5dp"
                     android:layout_marginLeft="220dp"/>
-
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

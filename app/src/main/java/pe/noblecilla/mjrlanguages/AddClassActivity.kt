@@ -33,4 +33,8 @@ class AddClassActivity : AppCompatActivity() {
         }
 
     }
+
+    override fun onBackPressed() {
+
+    }
 }

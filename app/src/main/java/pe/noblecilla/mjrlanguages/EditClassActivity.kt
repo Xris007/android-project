@@ -13,7 +13,7 @@ class EditClassActivity : AppCompatActivity() {
         setContentView(R.layout.activity_edit_class)
 
         btnCancel.setOnClickListener {
-            startActivity(Intent(this, ClassActivity::class.java))
+            startActivity(Intent(this, ClassInfoActivity::class.java))
         }
 
         btnSave.setOnClickListener {
@@ -21,7 +21,7 @@ class EditClassActivity : AppCompatActivity() {
             alert.setView(R.layout.dialog_edit_class)
             alert.setPositiveButton(R.string.save){
                     dialog, which ->
-                startActivity(Intent(this, ClassActivity::class.java))
+                startActivity(Intent(this, ClassInfoActivity::class.java))
                 finish()
             }
             alert.setNegativeButton(R.string.cancel){
@@ -30,5 +30,9 @@ class EditClassActivity : AppCompatActivity() {
             val dialog: AlertDialog = alert.create()
             dialog.show()
         }
+    }
+
+    override fun onBackPressed() {
+
     }
 }
