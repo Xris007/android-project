@@ -14,13 +14,12 @@ class ForgotPasswordActivity : AppCompatActivity() {
 
         ivBack.setOnClickListener {
             startActivity(Intent(this, LogInActivity::class.java))
-            finish()
         }
 
         btnSend.setOnClickListener {
             val alert = AlertDialog.Builder(this@ForgotPasswordActivity)
             alert.setView(R.layout.dialog_password)
-            alert.setPositiveButton(R.string.dialog_recover_exit){
+            alert.setPositiveButton(R.string.done){
                 dialog, which ->
                 startActivity(Intent(this, LogInActivity::class.java))
                 finish()

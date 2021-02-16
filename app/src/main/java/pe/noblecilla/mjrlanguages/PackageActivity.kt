@@ -3,21 +3,26 @@ package pe.noblecilla.mjrlanguages
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_log_in.*
+import kotlinx.android.synthetic.main.activity_package.*
 
-class LogInActivity : AppCompatActivity() {
+class PackageActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_log_in)
+        setContentView(R.layout.activity_package)
 
-        btnLogIn.setOnClickListener {
+        ivBack.setOnClickListener {
             startActivity(Intent(this, HomeActivity::class.java))
             finish()
         }
 
-        tvForgotPassword.setOnClickListener {
-            startActivity(Intent(this, ForgotPasswordActivity::class.java))
+        btnUpdate.setOnClickListener {
+            startActivity(Intent(this, ContactUsActivity::class.java))
         }
     }
+
+    override fun onBackPressed() {
+
+    }
+
 }
